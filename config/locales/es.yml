@@ -1,0 +1,6 @@
+---
+es:
+  payment_adjustment: 'Comision de tipo de pago'
+  percent_or_minimal_price: "Porcentaje o precio mínimo"
+  minimal_price: "Precio Mínimo"
+  percent: "Porcentaje"
