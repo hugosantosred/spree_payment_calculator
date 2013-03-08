@@ -30,7 +30,8 @@ module SpreePaymentCalculator
         Spree::PaymentCalculator::FlatPercentItemTotal,
         Spree::PaymentCalculator::FlatRate,
         Spree::PaymentCalculator::FlexiRate,
-        Spree::PaymentCalculator::PerItem
+        Spree::PaymentCalculator::PerItem,
+        Spree::PaymentCalculator::PercentOrMinimalPrice
       ]
 
       app.config.spree.calculators.gateways = [
@@ -39,7 +40,8 @@ module SpreePaymentCalculator
         Spree::PaymentCalculator::FlatPercentItemTotal,
         Spree::PaymentCalculator::FlatRate,
         Spree::PaymentCalculator::FlexiRate,
-        Spree::PaymentCalculator::PerItem
+        Spree::PaymentCalculator::PerItem,
+        Spree::PaymentCalculator::PercentOrMinimalPrice
       ]
     end
 
