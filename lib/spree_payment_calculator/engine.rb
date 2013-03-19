@@ -23,6 +23,7 @@ module SpreePaymentCalculator
 
       app.config.spree.calculators.add_class('payment_methods')
       app.config.spree.calculators.add_class('gateways')
+      app.config.spree.calculators.add_class('billing_integrations')
 
       app.config.spree.calculators.payment_methods = [
         Spree::PaymentCalculator::DefaultTax,
@@ -35,6 +36,16 @@ module SpreePaymentCalculator
       ]
 
       app.config.spree.calculators.gateways = [
+        Spree::PaymentCalculator::DefaultTax,
+        Spree::PaymentCalculator::PriceSack,
+        Spree::PaymentCalculator::FlatPercentItemTotal,
+        Spree::PaymentCalculator::FlatRate,
+        Spree::PaymentCalculator::FlexiRate,
+        Spree::PaymentCalculator::PerItem,
+        Spree::PaymentCalculator::PercentOrMinimalPrice
+      ]
+
+      app.config.spree.calculators.billing_integrations = [
         Spree::PaymentCalculator::DefaultTax,
         Spree::PaymentCalculator::PriceSack,
         Spree::PaymentCalculator::FlatPercentItemTotal,
